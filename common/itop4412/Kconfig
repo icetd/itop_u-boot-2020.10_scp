@@ -1,0 +1,13 @@
+menu "itop4412 Partition Info"
+
+config PART_KERNEL_SIZE
+	int "kernel part size (unit MB)"
+	depends on TARGET_ITOP4412
+	default 16
+
+config PART_DTB_SIZE
+	int "dtb part size (unit KB)"
+	depends on TARGET_ITOP4412
+	default 64
+
+endmenu
